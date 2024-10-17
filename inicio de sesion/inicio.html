@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="inicio.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="inicio.css">
+        <title>iniciar sesion</title>
+        <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+        
+      </head>
 <body>
     <div class="main-container">
         <div class="logo-container">
@@ -18,19 +22,19 @@
                 <h2>Iniciar Sesión</h2>
                 <p>¿No tienes una cuenta? <a href="#">Regístrate Aquí</a></p>
             </div>
-            <form>
+            <form id="formUsuario">
                 <button type="button" class="btn btn-social btn-google">Continuar con Google</button>
                 <button type="button" class="btn btn-social btn-facebook">Continuar con Facebook</button>
                 <button type="button" class="btn btn-social btn-apple">Continuar con Apple</button>
                 <hr>
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nombre de usuario" required>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre de usuario" required>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                    <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico" required>
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control" placeholder="Contraseña" required>
+                    <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
                 </div>
                 <div class="mb-3">
                     <a href="#">editar usuario</a>
@@ -38,10 +42,11 @@
                 <div class="mb-3">
                     <a href="#">eliminar usuario</a>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                <button type="submit" class="btn btn-primary mt-3">iniciar sesion</button>
             </form>
         </div>
     </div>
+    <script src="inicio.js"></script>
 </body>
 </html>
 
