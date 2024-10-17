@@ -1,0 +1,91 @@
+/* Estilos básicos para la estructura */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    gap: 10px;
+}
+
+header {
+    grid-column: 1 / 3;
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* Sección de usuarios */
+.usuarios {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.usuario {
+    text-align: center;
+}
+
+.usuario img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.usuario p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Sección de mensajes */
+.mensajes {
+    padding: 10px;
+    border-left: 2px solid #ccc;
+}
+
+.chat {
+    height: 80%;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.controles {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+}
+
+.controles button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controles button:hover {
+    background-color: #0056b3;
+}
