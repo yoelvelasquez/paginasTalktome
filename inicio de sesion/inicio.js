@@ -23,6 +23,11 @@ const firebaseConfig = {
         alert('Por favor, completa todos los campos');
         return;
       }
+      if (correo === 'yoeladmin@talktome.com') {
+        window.location.href = './administrador/administrador.html';
+
+        return;
+      }
     
       // Comprobar si estamos editando un usuario o agregando uno nuevo
       const usuarioId = document.getElementById('formUsuario').getAttribute('data-id');
