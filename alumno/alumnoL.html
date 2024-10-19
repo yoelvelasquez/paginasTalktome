@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lecciones.css">
-    <title>Lección de Idiomas</title>
+    <link rel="stylesheet" href="alumnoL.css">
+    <title>Lección 1 - Talk to Me</title>
 </head>
 <body>
     <div class="container">
@@ -17,13 +17,11 @@
 
         <!-- Video y preguntas -->
         <div class="main-content">
-            <!-- Barra de progreso -->
             <div class="progress-bar"></div>
 
-            <!-- Video de YouTube incrustado -->
             <div class="video-container">
                 <iframe width="560" height="315" 
-                    src="https://www.youtube.com/watch?v=YTAG4hTKASY" 
+                    src="/paginasTalktome/videos2/3 Historias Cortas para Aprender INGLÉS✔️ (Recopilación) Nivel Básico(1080P_HD).mp4" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
@@ -34,21 +32,26 @@
             <div class="question">
                 <h2>What word do you hear in this part of the song?</h2>
                 <div class="options">
-                    <button>Cielo</button>
-                    <button>Alternativa</button>
-                    <button>Vamos</button>
+                    <button onclick="checkAnswer('Cielo')">Cielo</button>
+                    <button onclick="checkAnswer('Alternativa')">Alternativa</button>
+                    <button onclick="checkAnswer('Vamos')">Vamos</button>
                 </div>
+            </div>
+
+            <!-- Mensaje de error -->
+            <div id="error-message" class="error-box" style="display: none; color: red;">
+                <p>Respuesta incorrecta. Intenta de nuevo.</p>
             </div>
         </div>
 
         <!-- Panel lateral de lecciones -->
         <div class="right-panel">
             <h2>Lecciones</h2>
-            <button><b>Lección 1</b></button>
-            <button>Lección 2</button>
-            <button>Lección 3</button>
-            <button>Lección 4</button>
-            <button>Lección 5</button>
+            <a href="alumnoL.html"><button><b>Lección 1</b></button></a>
+            <a href="alumnoONE.html"><button>Lección 2</button></a>
+            <a href="alumnoTWO.html"><button>Lección 3</button></a>
+            <a href="alumnoTREE.html"><button>Lección 4</button></a>
+            <a href="alumnoFOUR.html"><button>Lección 5</button></a>
 
             <!-- Cuadro de pronunciación -->
             <div class="alphabet">
@@ -56,10 +59,12 @@
                     <tr><td>A</td><td>E</td><td>N</td></tr>
                     <tr><td>B</td><td>I</td><td>O</td></tr>
                     <tr><td>C</td><td>D</td><td>P</td></tr>
-                    <!-- Más letras -->
                 </table>
             </div>
         </div>
     </div>
+
+    <script src="alumnoL.js"></script>
 </body>
 </html>
+

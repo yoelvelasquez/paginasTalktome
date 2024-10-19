@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <title>Registrar Usuarios</title>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">¡editar usuarios!</h1>
+      <div class="form-group">
+        <img src="./1.png" alt="">
+      </div>
+      
+      <!-- Formulario para agregar usuario -->
+ 
+      <!-- Tabla para mostrar los usuarios registrados -->
+      <h2 class="text-center mt-5">Usuarios Registrados</h2>
+      <table class="table table-striped mt-3" id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Eliminar</th>
+            <th>Editar</th>
+          </tr>
+        </thead>
+        <tbody id="tablaUsuarios">
+          <!-- Los usuarios se mostrarán aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="administradorEU.js"></script>
+  </body>
+</html>

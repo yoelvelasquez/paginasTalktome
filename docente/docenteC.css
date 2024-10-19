@@ -166,3 +166,14 @@ main {
     width: 24px;
     margin-right: 10px;
 }
+.logo {
+    width: 100px !important; /* Ajusta este valor según el tamaño que prefieras */
+    height: auto !important;
+}
+.live-video {
+    width: 100%; /* Ajusta al 100% del contenedor */
+    max-width: 600px; /* Tamaño máximo del video */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el video */
+}
